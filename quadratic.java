@@ -16,15 +16,13 @@ class quadratic
     double r2=((-b)-d)/e;
       if(n==0)
         {
-          System.out.println("The roots are equal\nthe roots are : "+r1);
-          System.out.println(","+r2);
+          System.out.println("The roots are equal\nthe roots are : "+r1","+r2);
         }
       if(n<0)
         System.out.println("The roots are imaginary\n");
       if(n>0)
        {
-        System.out.println("The roots are real and distinct\nthe roots are : "+r1);
-        System.out.println(","+r2);
+        System.out.println("The roots are real and distinct\nthe roots are : "+r1","+r2);
        }
    }
  }
