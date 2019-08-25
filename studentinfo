@@ -1,16 +1,17 @@
 import java.util.*;
 class main
 {
- public static void main(String arg[])
+ public static void main(String args[])
   {
    Scanner s=new Scanner(System.in);
    int a[]=new int[6];
    int b[]=new int[6];
    int c[]=new int[6];
    int m=0;
+   int i;
    int n=0;
    double z;
-   student a=new student();
+   student p=new student();
    System.out.println("Enter the name of student");
    String x=s.nextLine();
    System.out.println("Enter the USN of student");
@@ -18,8 +19,8 @@ class main
    System.out.println("Enter the marks of student and the corresponding creditds of the same subject");
    for(i=0;i<6;i++)
     {
-      a[i]=s.nextInt;
-      b[i]=s.nextInt;
+      a[i]=s.nextInt();
+      b[i]=s.nextInt();
     }
    for(i=0;i<6;i++)
     {
@@ -47,7 +48,7 @@ class main
 
 
 
-   a.info(x,y,z);
+   p.info(x,y,z);
   }
 }
 class student
