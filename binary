@@ -12,8 +12,8 @@ class binary
   System.out.println("enter the element to be checked in the give array\n");
    key=s.nextInt;
   
-  first=a[0];
-  last=a[n-1];
+  first=0;
+  last=n-1;
   while(firs<=last)
    { mid=(first+last)/2;
      if(key>a[mid])
