@@ -22,21 +22,23 @@ class WrongAge extends Exception
 class father
 {
  public int agef;
- father(int a)throws WrongAge
+ public void father1(int a)throws WrongAge
  {
   agef=a;
   if(agef<=0)
    throw new WrongAge(agef);
+  else
+   System.out.println("Father's age accepted");
  }
 }
 
 class son extends father
 {
  public int ages;
- son(int b)throws WrongAge
+ public void son1(int b)throws WrongAge
  {
    ages=b;
-   if(ages==agef)
+   if(agef<=ages)
      throw new WrongAge(ages);
    else
     System.out.println("Ages of FATHER and his SON are recorded.........\nFather : "+agef+"yrs\nSon : "+ages+"yrs");
@@ -55,16 +57,16 @@ class exp
   m=s.nextInt();
   System.out.println("Enter the age of his Son : ");
   n=s.nextInt();
+  father o1=new father();
+  son o2=new son();
   try
   {
-   father o1=new father(m);
-   son o2=new son(n);
+    o1.father1(m);
+    o2.son1(n);
   }
   catch(WrongAge e)
   {
-   System.out.println("e");
+   System.out.println(e);
   }
  }
 }
-  
-  
