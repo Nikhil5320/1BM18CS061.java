@@ -25,7 +25,7 @@ class CSE extends Thread
   {
    System.out.println("Computer Science and Engineering");
    try{
-       Thread.sleep(10000);
+       Thread.sleep(2000);
       }catch(Exception e){};
   }
  }
