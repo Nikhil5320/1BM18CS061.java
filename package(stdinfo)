@@ -63,8 +63,8 @@ class stdinfo
   int sume[]=new int[n];
   double sum[]=new double[n];
   student ob[]=new student[5];
-  internals oi[]=new internals[5];
-  externals oe[]=new externals[5];
+  internals oi[]=new internals[n];
+  externals oe[]=new externals[n];
   for(int i=0;i<n;i++)
   {
    System.out.println("Enter USN,Name and Semister of the student"+(i+1));
@@ -78,7 +78,7 @@ class stdinfo
   {
    System.out.println("Enter the marks of the student"+(i+1)+" in the internals");
    for(int j=0;j<5;j++)
-    x[i]=s.nextInt();
+    x[j]=s.nextInt();
    oi[i]=new internals();
    sumi[i]=oi[i].internals1(x);
   }
@@ -86,7 +86,7 @@ class stdinfo
   {
    System.out.println("Enter the marks of the student"+(i+1)+" in the externals");
    for(int j=0;j<5;j++)
-    y[i]=s.nextInt();
+    y[j]=s.nextInt();
    oe[i]=new externals();
    sume[i]=oe[i].externals1(y);
   }
